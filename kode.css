@@ -248,7 +248,37 @@ footer{
     background-size: var(--s) calc(var(--s) * 0.577);
   }
   
-
+@media (max-width:1025px) {
+    .about-content{
+        display: block;
+    }
+    iframe{
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+    .about-text{
+        margin-left: 0;
+        width: 100%;
+    }
+    section{
+        min-height: auto;
+    }
+    .container{
+        grid-template-columns: 1fr;
+    }
+    .col img{
+        width: 100%;
+        margin: 1rem 0 0 0;
+    }
+    .contact-content{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+    .box1, .box2, .box3, .box4{
+        width: 70%;
+        margin: 1rem;
+    }
+}
 @media (max-width: 450px) {
     header{
         display: inline;
